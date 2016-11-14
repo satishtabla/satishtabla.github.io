@@ -1,0 +1,353 @@
+html{
+background:url(images/bg-tile.jpg);
+}
+body{
+color:#D1C496;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:12px;
+margin:0;
+background:#110604 url(images/bg-body.jpg) no-repeat center 0;
+}
+img{
+border:0;
+}
+a{
+outline:none;
+color:#d3c27c;
+text-decoration:none;
+}
+a:hover{
+color:#fff;
+}
+hr{
+	height:1px;
+	overflow:hidden;
+	border-width:1px 0 0;
+	border-color:#a03f1c;
+}
+.clear{clear:both;}
+h3{
+margin:0 0 5px;
+font-size:14px;
+}
+.content li h3{
+font-size:12px;
+}
+address{
+font-style:normal;
+}
+li{
+margin:0 0 20px;
+}
+#container{
+width:660px;
+margin:0 auto;
+padding:47px 0 50px;
+overflow:hidden;
+}
+#nav{
+width:660px;
+height:55px;
+background:url(images/bg-menu.jpg) no-repeat;
+margin:0;
+padding:0;
+overflow:hidden;
+}
+#nav li{
+list-style:none;
+margin:0;
+float:left;
+}
+.wrap{
+background:#6c1c00 url(images/bg-content.jpg) no-repeat 0 192px;
+float:left;
+padding:0 0 8px;
+}
+.home .wrap{
+background-position:0 450px;
+}
+.spotlight{
+float:left;
+width:656px;
+height:191px;
+padding:2px 2px 0;
+position:relative;
+margin:0 0 33px;
+}
+.home .spotlight{
+height:450px;
+}
+.spotlight h1{
+position:absolute;
+margin:0;
+top:27px;
+left:20px;
+width:245px;
+height:38px;
+}
+.spotlight h1 a{
+display:block;
+width:245px;
+height:38px;
+background:url(images/title-satish-babu.gif) no-repeat;
+text-indent:-9999em;
+}
+.home .spotlight h1{
+left:400px;
+}
+.player{
+width:192px;
+height:90px;
+overflow:hidden;
+position:absolute;
+right:10px;
+bottom:10px;
+}
+.patch{
+width:192px;
+height:10px;
+background:#000;
+position:absolute;
+right:10px;
+bottom:10px;
+}
+.more{
+color:#ffb005;
+}
+.events{
+background:#31160d;
+width:236px;
+float:left;
+margin:0 8px;
+padding:0 9px 6px;
+height:158px;
+}
+.awards{
+  background:#31160d;
+  width:236px;
+  float:left;
+  margin:0 8px;
+  padding:0 9px 6px;
+  height:43px;
+}
+.awards h3{
+  margin: 4px 0 0;
+}
+.awards h3 a{
+  background: url(images/awards.gif) no-repeat;
+  display: block;
+  padding: 12px 0 12px 40px;
+}
+.award-list{
+  padding: 0;
+}
+.award-list li{
+  float: left;
+  list-style: none;
+  margin:0 30px 20px 0;
+}
+.news{
+background:#0d0200;
+width:357px;
+float:left;
+margin:0 8px 10px 0;
+height:158px;
+padding:0 5px 6px 20px;
+}
+.news .more{
+float:right;
+margin-right:30px;
+}
+h2{
+width:160px;
+height:31px;
+text-indent:-9999em;
+margin:0 0 0 43px;
+position:relative;
+top:-18px;
+}
+.events h2{
+background:url(images/latest-concerts.gif);
+}
+.news h2{
+background:url(images/latest-news.gif);
+}
+.events ul{
+margin:0;
+padding:0;
+list-style:none;
+}
+.date{
+width:42px;
+height:44px;
+background:#cfb659;
+color:#8c4008;
+font-weight:bold;
+font-size:13px;
+text-align:center;
+float:left;
+margin:5px 10px 0 0;
+}
+.date span{
+display:block;
+font-size:20px;
+font-weight:normal;
+}
+.events .details{
+float:left;
+width:184px;
+}
+.events h3, .events h4, .events h5{
+margin:0 0 2px;
+font-size:12px;
+font-weight:normal;
+}
+.events h3 span{
+	font-weight:bold;
+}
+.events li{
+padding:8px 0 10px;
+float:left;
+width:100%;
+margin:0;
+}
+.events li.first{
+padding-top:0;
+}
+.events .more{
+float:right;
+}
+.thumb{
+float:left;
+margin:0 20px 0 0;
+}
+.content{
+padding:10px 45px;
+font-size:12px;
+line-height:18px;
+min-height:500px;
+height:auto!important;
+height:500px;
+float:left;
+width:570px;
+}
+h1{
+  font-size: 18px;
+margin:0 0 20px;
+}
+#footer{
+background:#200600;
+padding:15px 25px 0;
+width:610px;
+height:35px;
+float:left;
+color:#b07567;
+}
+#footer span{
+float:right;
+}
+#footer span a{
+color:#985e50;
+}
+#footer span a:hover{
+color:#b07567;
+}
+.gallery{
+margin:0;
+padding:0;
+list-style:none;
+}
+.gallery li{
+float:left;
+padding:1px 5px 6px 1px;
+margin:0 30px 20px 0;
+background:url(images/bg-gallery.gif) no-repeat;
+}
+.gallery li.last{
+margin-right:0;
+}
+.concerts-list{
+list-style:none;
+padding:0;
+margin:0;
+}
+.concerts-list li{
+float:left;
+width:100%;
+margin:0 0 30px;
+}
+.concerts-list .details{
+float:left;
+width:400px;
+}
+.concerts-list h4, .concerts-list h5{
+margin:0 0 5px;
+}
+.paging{
+clear:both;
+width:100%;
+padding:10px 0;
+}
+.paging a{
+float:left;
+margin:0 5px;
+font-size:15px;
+}
+.paging a.current{
+color:#fff;
+}
+.paging a.prev, .paging a.next{
+display:block;
+width:10px;
+height:10px;
+background:url(images/bg-arrows.gif) no-repeat 0 1px;
+text-indent:-9999em;
+margin:5px 5px 0;
+}
+.paging a.prev:hover{
+background-position:0 -30px;
+}
+.paging a.next{
+background-position:-48px 1px;
+}
+.paging a.next:hover{
+background-position:-48px -30px;
+}
+.download{
+float:right;
+width:250px;
+}
+.download ul{
+padding:0;
+margin:0;
+}
+.download li{
+margin:0 0 8px;
+list-style:none;
+}
+.download h3{
+margin:0 0 15px;
+}
+ul.news-list{
+padding:0;
+margin:0;
+}
+.news-list li{
+margin:0 20px 20px 0;
+width:150px;
+float:left;
+list-style:none;
+}
+.news-list li h4{
+margin:0;
+font-size:12px;
+}
+.facebook{
+  background: url(images/facebook.png) no-repeat;
+  float: right;
+  height: 32px;
+  margin: -5px 0 0;
+  overflow: hidden;
+  text-indent: -999em;
+  width: 32px;
+}
