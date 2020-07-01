@@ -10,7 +10,6 @@
 <meta name="robots" content="All" />
 <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
 <link href="style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="js/swfobject.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body class="home">
@@ -27,18 +26,12 @@
         <div class="spotlight">
         <h1><a href="#">Sathish Babu</a></h1>
         <div class="player">
-        	<div id="flashPlayer">
-      		This text will be replaced by the flash music player.
-    		</div>
-    		<script type="text/javascript">
-       		var so = new SWFObject("playerMultiple.swf", "mymovie", "192", "95", "7", "#FFFFFF");
-    		so.addVariable("overColor","#660000")
-    
-       		so.addVariable("autoPlay","no")
-       		so.addParam("wmode","transparent")
-       		so.addVariable("playlistPath","playlist.xml")
-       		so.write("flashPlayer");
-   	 		</script>
+        	<audio controls>
+           <source src="solo_part1.mp3" type="audio/mpeg"> 
+          </audio>
+          <audio controls>
+           <source src="solo_part2.mp3" type="audio/mpeg"> 
+          </audio>
         </div><div class="patch"></div>
         <img src="images/spotlight.jpg" alt="Satish Babu" title="Satish Babu" />
         </div>

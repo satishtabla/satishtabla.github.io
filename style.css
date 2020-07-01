@@ -33,6 +33,12 @@ font-size:14px;
 .content li h3{
 font-size:12px;
 }
+audio{
+  outline: none;
+  height: 25px;
+  width: 265px;
+  margin: 0 0 2px;
+}
 address{
 font-style:normal;
 }
@@ -96,7 +102,7 @@ text-indent:-9999em;
 left:400px;
 }
 .player{
-width:192px;
+width: 270px;
 height:90px;
 overflow:hidden;
 position:absolute;
