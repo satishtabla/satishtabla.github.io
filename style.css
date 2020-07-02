@@ -4,7 +4,7 @@ background:url(images/bg-tile.jpg);
 body{
 color:#D1C496;
 font-family:Georgia, "Times New Roman", Times, serif;
-font-size:12px;
+font-size:14px;
 margin:0;
 background:#110604 url(images/bg-body.jpg) no-repeat center 0;
 }
@@ -31,7 +31,7 @@ margin:0 0 5px;
 font-size:14px;
 }
 .content li h3{
-font-size:12px;
+font-size:14px;
 }
 audio{
   outline: none;
@@ -205,7 +205,7 @@ width:184px;
 }
 .events h3, .events h4, .events h5{
 margin:0 0 2px;
-font-size:12px;
+font-size:15px;
 font-weight:normal;
 }
 .events h3 span{
@@ -229,7 +229,6 @@ margin:0 20px 0 0;
 }
 .content{
 padding:10px 45px;
-font-size:12px;
 line-height:18px;
 min-height:500px;
 height:auto!important;
@@ -247,7 +246,7 @@ padding:15px 25px 0;
 width:610px;
 height:35px;
 float:left;
-color:#b07567;
+color:#8e3213;
 }
 #footer span{
 float:right;
@@ -346,7 +345,7 @@ list-style:none;
 }
 .news-list li h4{
 margin:0;
-font-size:12px;
+font-size:15px;
 }
 .facebook{
   background: url(images/facebook.png) no-repeat;
