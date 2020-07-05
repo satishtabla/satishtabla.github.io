@@ -10,50 +10,59 @@
 <meta name="robots" content="All" />
 <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
 <link href="style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="js/script.js"></script>
+<link href="js/lightbox.css" rel="stylesheet" type="text/css" />
 </head>
 <body class="home">
 <div id="container">
 	<ul id="nav">
-    	<li class="current"><a href="#" title="Home"><img src="images/nav-home-on.gif" alt="Home" title="Home" /></a></li>
-        <li><a href="profile.html" title="Profile"><img src="images/nav-profile.gif" alt="Profile" title="Profile" /></a></li>
-        <li><a href="gallery.html" title="Gallery"><img src="images/nav-gallery.gif" alt="Gallery" title="Gallery" /></a></li>
-      <li><a href="video.html" title="Audio &amp; Video"><img src="images/nav-video.gif" alt="Audio &amp; Video" title="Audio &amp; Video" /></a></li>
-     <li><a href="taalmandir.html" title="Taal Mandir"><img src="images/nav-taal.jpg" alt="Taal Mandir" title="Taal Mandir" /></a></li>
-      <li><a href="contact.html" title="Contact"><img src="images/nav-contact.gif" alt="Contact" title="Contact" /></a></li>
+    	<li class="current"><a href="#" title="Home">Home</a></li>
+        <li><a href="profile.html" title="Profile">Profile</a></li>
+        <li><a href="gallery.html" title="Gallery">Photo Gallery</a></li>
+      <li><a href="video.html" title="Videos">Videos</a></li>
+     <li><a href="taalmandir.html" title="Taal Mandir">Taal Mandir</a></li>
+     <li><a href="news.html" title="News">News</a></li>
+      <li><a href="contact.html" title="Contact">Contact</a></li>
   </ul>
     <div class="wrap">
         <div class="spotlight">
         <h1><a href="#">Sathish Babu</a>
           <span>Disciple of Ustad Alla Rakha</span></h1>
-        <!-- <div class="player">
-        	<audio controls>
-           <source src="solo_part1.mp3" type="audio/mpeg"> 
-          </audio>
-          <audio controls>
-           <source src="solo_part2.mp3" type="audio/mpeg"> 
-          </audio>
-        </div><div class="patch"></div> -->
         <img src="images/spotlight.jpg" alt="Satish Babu" title="Satish Babu" />
-        </div>
-        <div class="taalmandir">
-          <h2>Taal Mandir </h2>
+        <div class="overlay">
+          <h2>Taal Mandir</h2>
           <h3>School of Tabla</h3>
-          <a href="https://api.whatsapp.com/send?phone=+919349320648" target="_blank" class="whatsapp">+91 9349320648</a>
         </div>
-        <div class="news">
-            <h2 title="Latest News">Latest News</h2>
-            <a href="news20090507.html"><img class="thumb" src="images/thumb-news.jpg" alt="Sathish Babu" title="Sathish Babu" /></a>
-            <div>
-				<p>" It was after many travails that Sathish Babu was accepted by Ustad Alla Rakha as his shishya... "</p>
-                <a href="news.html" class="more">&raquo; View all</a>
-                <a href="news20090507.html" class="more">&raquo; Read more</a></div>
         </div>
-        <div class="awards">
-          <h3><a href="awards.html">Awards &amp; Achievements</a></h3>
-        </div>
-        <div class="other">
-        	<a href="taalmandir.html"><img src="images/taalmandir-events.jpg" alt="Taal Mandir Events" title="Taal Mandir Events" /></a>
+        <div class="homecontent">
+          <div class="col1">
+            <div class="taalmandir">
+              <h2>for Online Classes</h2>
+              <div><a href="https://api.whatsapp.com/send?phone=+919349320648" target="_blank" class="whatsapp">+91 9349320648</a></div>
+            </div>
+          </div>
+          <div class="col2">
+            <div class="news">
+                <h2 title="In the News"><span>In the News</span></h2>
+                <a href="images/news-hin-7-5.jpg" class="popup"><img class="thumb" src="images/thumb-news.jpg" alt="Sathish Babu" title="Sathish Babu" /></a>
+                <div>
+                  <p><a href="images/news-hin-7-5.jpg" class="popup">" It was after many travails that Sathish Babu was accepted by Ustad Alla Rakha as his shishya... "</a></p>
+                  <div class="links">
+                    <a href="images/news-hin-7-5.jpg" class="more popup">Read more &raquo; </a>
+                    <a href="news.html" class="more">More News &raquo; </a>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="col1">
+            <div class="awards">
+              <h3><a href="awards.html">Awards &amp; Achievements</a></h3>
+            </div>
+          </div>
+          <div class="col2">
+            <div class="other">
+            	<a href="taalmandir.html"><img src="images/taalmandir-events.jpg" alt="Taal Mandir Events" title="Taal Mandir Events" /></a>
+            </div>
+          </div>
         </div>
     </div>
     <div id="footer"><!-- <script type="text/javascript">
@@ -73,5 +82,12 @@ pageTracker._trackPageview();
 		<div style="display:none;"><a href="http://www.a2zwebindex.com">Web Directory</a></div>
     </div>
 </div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('.popup').lightBox();
+    });
+</script>
 </body>
 </html>

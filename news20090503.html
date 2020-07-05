@@ -14,25 +14,17 @@
 <style>
 .news-list{float:left; margin:0 40px 20px 0;}
 </style>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/lightbox.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-<script type="text/javascript" src="js/swfobject.js"></script>
-<script type="text/javascript">
-    $(function() {
-        $('.news-list a').lightBox();
-    });
-</script>
 </head>
 <body>
 <div id="container">
 	<ul id="nav">
-    	<li><a href="index.html" title="Home"><img src="images/nav-home.gif" alt="Home" title="Home" /></a></li>
-      <li><a href="profile.html" title="Profile"><img src="images/nav-profile.gif" alt="Profile" title="Profile" /></a></li>
-      <li><a href="gallery.html" title="Gallery"><img src="images/nav-gallery.gif" alt="Gallery" title="Gallery" /></a></li>
-      <li><a href="video.html" title="Audio &amp; Video"><img src="images/nav-video.gif" alt="Audio &amp; Video" title="Audio &amp; Video" /></a></li>
-     <li><a href="concerts.html" title="Concerts"><img src="images/nav-concerts.gif" alt="Concerts" title="Concerts" /></a></li>
-      <li><a href="contact.html" title="Contact"><img src="images/nav-contact.gif" alt="Contact" title="Contact" /></a></li>
+        <li><a href="index.html" title="Home">Home</a></li>
+        <li><a href="profile.html" title="Profile">Profile</a></li>
+        <li><a href="gallery.html" title="Gallery">Photo Gallery</a></li>
+      <li><a href="video.html" title="Videos">Videos</a></li>
+     <li><a href="taalmandir.html" title="Taal Mandir">Taal Mandir</a></li>
+     <li class="current"><a href="news.html" title="News">News</a></li>
+      <li><a href="contact.html" title="Contact">Contact</a></li>
   </ul>
     <div class="wrap">
         <div class="spotlight">
@@ -40,7 +32,7 @@
         <img src="images/spotlight-inner.jpg" alt="Sathish Babu" title="Sathish Babu" />
         </div>
         <div class="content">
-        	<h1 title="News"><img src="images/txt-news.gif" alt="News" title="News" /></h1>
+          <h2>In the News</h2>
             <div class="news-list">
             	<a href="images/news-man-3-5.jpg" title="Deepika - March 14, 2009"><img src="images/news-man-3-5-t.jpg" alt="" title="" /></a>
                 <h4>Malayalamanorama - May 3, 2009</h4>
@@ -57,15 +49,16 @@
         <li><a class="facebook" href="https://www.facebook.com/satish.tabla?fref=ts" target="_blank">Facebook</a></li>
       </ul>
     	&copy; 2020 Sathish Babu
-    </div><script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-var pageTracker = _gat._getTracker("UA-8451177-1");
-pageTracker._trackPageview();
-} catch(err) {}</script>
+    </div>
 </div>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('.news-list a').lightBox();
+    });
+</script>
 </body>
 </html>
