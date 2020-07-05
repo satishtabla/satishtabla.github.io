@@ -9,11 +9,13 @@
 <meta name="copyright" content="2020 Sathish Babu" />
 <meta name="robots" content="All" />
 <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+<link href="jquery.fancybox.min.css" rel="stylesheet" type="text/css" />
 <link href="style.css" rel="stylesheet" type="text/css" />
-<link href="js/lightbox.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="container">
+  <div class="menuoverlay"></div>
+  <a class="btnmenu"><span></span><span></span><span></span></a>
 	<ul id="nav">
         <li><a href="index.html" title="Home">Home</a></li>
         <li><a href="profile.html" title="Profile">Profile</a></li>
@@ -25,19 +27,19 @@
   </ul>
     <div class="wrap">
         <div class="spotlight">
-        <h1><a href="#">Sathish Babu</a></h1>
+        <h1><a href="index.html">Sathish Babu</a></h1>
         <img src="images/spotlight-inner.jpg" alt="Sathish Babu" title="Sathish Babu" />
         </div>
         <div class="content">
             <h2>Awards &amp; Achievements</h2>
             <ul class="award-list">
-                <li><a href="certificates/visharad.jpg"><img src="certificates/thumb-visharad.jpg" alt="" /></a></li>
-                <li><a href="certificates/certificate_1.jpg"><img src="certificates/thumb-1.jpg" alt="" /></a></li>
-                <li><a href="certificates/certificate_2.jpg"><img src="certificates/thumb-2.jpg" alt="" /></a></li>
-                <li><a href="certificates/certificate_3.jpg"><img src="certificates/thumb-3.jpg" alt="" /></a></li>
-                <li><a href="certificates/certificate_4.jpg"><img src="certificates/thumb-4.jpg" alt="" /></a></li>
-                <li><a href="certificates/certificate_5.jpg"><img src="certificates/thumb-5.jpg" alt="" /></a></li>
-                <li><a href="certificates/certificate_6.jpg"><img src="certificates/thumb-6.jpg" alt="" /></a></li>
+                <li><a data-fancybox="awards" href="certificates/visharad.jpg"><img src="certificates/thumb-visharad.jpg" alt="" /></a></li>
+                <li><a data-fancybox="awards" href="certificates/certificate_1.jpg"><img src="certificates/thumb-1.jpg" alt="" /></a></li>
+                <li><a data-fancybox="awards" href="certificates/certificate_2.jpg"><img src="certificates/thumb-2.jpg" alt="" /></a></li>
+                <li><a data-fancybox="awards" href="certificates/certificate_3.jpg"><img src="certificates/thumb-3.jpg" alt="" /></a></li>
+                <li><a data-fancybox="awards" href="certificates/certificate_4.jpg"><img src="certificates/thumb-4.jpg" alt="" /></a></li>
+                <li><a data-fancybox="awards" href="certificates/certificate_5.jpg"><img src="certificates/thumb-5.jpg" alt="" /></a></li>
+                <li><a data-fancybox="awards" href="certificates/certificate_6.jpg"><img src="certificates/thumb-6.jpg" alt="" /></a></li>
             </ul>
         </div>
     </div>
@@ -49,11 +51,14 @@
     	&copy; 2020 Sathish Babu
     </div>
 </div>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/lightbox.js"></script>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
 <script type="text/javascript">
-    $(function() {
-        $('.award-list a').lightBox();
+    $('.btnmenu').click(function(){
+      $('#container').toggleClass('open');
+    });
+    $('.menuoverlay').click(function(){
+      $('#container').toggleClass('open');
     });
 </script>
 </body>
