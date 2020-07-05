@@ -41,7 +41,7 @@ background:#110604 url(images/bg-body.jpg) no-repeat center 0;
   box-sizing: border-box;
 }
 p{
-  line-height: 1.3;
+  line-height: 1.5;
 }
 img{
 border:0;
@@ -268,6 +268,9 @@ color: #f2c54b;
 .news{
 background:#0d0200;
 padding:20px;
+}
+.news p{
+  margin-top: 0;
 }
 .news .links{
 text-align: right;
@@ -610,6 +613,7 @@ display: -webkit-box;display: -ms-flexbox;display: flex;
   .spotlight img{
     float: right;
     max-width: initial;
+    width: 160%;
   }
   .spotlight h1{
     top: -51px;
