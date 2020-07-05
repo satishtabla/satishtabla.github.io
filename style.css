@@ -171,6 +171,7 @@ left:30px;
 }
 .spotlight img{
   width: 100%;
+  display: block;
 }
 .spotlight h1 span{
   display: block;
