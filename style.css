@@ -365,7 +365,7 @@ margin:0 0 40px;
 background:#200600;
 font-size: 15px;
 padding:20px;
-color:#8e3213;
+color:#b75a3a;
 }
 #footer span{
 float:right;
@@ -594,6 +594,7 @@ display: -webkit-box;display: -ms-flexbox;display: flex;
   #container{
     padding-top: 70px;
     width: 100%;
+    margin-bottom: 20px;
   }
   #nav{
     display: block;
