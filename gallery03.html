@@ -3,27 +3,20 @@
 <head>
 <title>Sathish Babu - Photo gallery</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 <meta name="description" content="Tabla player from south India, a deciple of Ustad Allarakha Khan Saheb." />
 <meta name="keywords" content="tabla, tabla player, sathish babu, satish babu, tabla teacher, indian percussion, indian music, ustad allarakha, punjab kharana" />
 <meta name="author" content="Felix A J" />
 <meta name="copyright" content="2020 Sathish Babu" />
 <meta name="robots" content="All" />
 <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+<link href="jquery.fancybox.min.css" rel="stylesheet" type="text/css" />
 <link href="style.css" rel="stylesheet" type="text/css" />
-<link href="js/lightbox.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/lightbox.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-<script type="text/javascript" src="js/swfobject.js"></script>
-<script type="text/javascript">
-    $(function() {
-        $('.gallery a').lightBox();
-		$(".gallery li:nth-child(5n)").addClass('last');
-    });
-</script>
 </head>
 <body>
 <div id="container">
+  <div class="menuoverlay"></div>
+  <a class="btnmenu"><span></span><span></span><span></span></a>
 	<ul id="nav">
         <li><a href="index.html" title="Home">Home</a></li>
         <li><a href="profile.html" title="Profile">Profile</a></li>
@@ -35,27 +28,27 @@
   </ul>
     <div class="wrap">
         <div class="spotlight">
-        <h1><a href="#">Sathish Babu</a></h1>
+        <h1><a href="index.html">Sathish Babu</a></h1>
         <img src="images/spotlight-inner.jpg" alt="Sathish Babu" title="Sathish Babu" />
         </div>
         <div class="content">
           <h2>Photo Gallery</h2>
             <ul class="gallery">
-           	  <li><a href="gallery/p38.jpg"><img src="gallery/t38.jpg" alt="" /></a></li>
-           	  <li><a href="gallery/p39.jpg"><img src="gallery/t39.jpg" alt="" /></a></li>
-           	  <li><a href="gallery/p41.jpg"><img src="gallery/t41.jpg" alt="" /></a></li>
-           	  <li><a href="gallery/p42.jpg"><img src="gallery/t42.jpg" alt="" /></a></li>
-           	  <li><a href="gallery/p43.jpg"><img src="gallery/t43.jpg" alt="" /></a></li>
-           	  <li><a href="gallery/p44.jpg"><img src="gallery/t44.jpg" alt="" /></a></li>
-            	<li><a href="gallery/p47.jpg"><img src="gallery/t47.jpg" alt="" /></a></li>
-           	  <li><a href="gallery/p48.jpg"><img src="gallery/t48.jpg" alt="" /></a></li>
-           	  <li><a href="gallery/p49.jpg"><img src="gallery/t49.jpg" alt="" /></a></li>
-           	  <li><a href="gallery/p50.jpg"><img src="gallery/t50.jpg" alt="" /></a></li>
-           	  <li><a href="gallery/p51.jpg"><img src="gallery/t51.jpg" alt="" /></a></li>
-           	  <li><a href="gallery/p53.jpg"><img src="gallery/t53.jpg" alt="" /></a></li>
-           	  <li><a href="gallery/p55.jpg"><img src="gallery/t55.jpg" alt="" /></a></li>
-           	  <li><a href="gallery/p56.jpg"><img src="gallery/t56.jpg" alt="" /></a></li>
-           	  <li><a href="gallery/p57.jpg"><img src="gallery/t57.jpg" alt="" /></a></li>
+           	  <li><a data-fancybox="gallery" href="gallery/p38.jpg"><img src="gallery/t38.jpg" alt="" /></a></li>
+           	  <li><a data-fancybox="gallery" href="gallery/p39.jpg"><img src="gallery/t39.jpg" alt="" /></a></li>
+           	  <li><a data-fancybox="gallery" href="gallery/p41.jpg"><img src="gallery/t41.jpg" alt="" /></a></li>
+           	  <li><a data-fancybox="gallery" href="gallery/p42.jpg"><img src="gallery/t42.jpg" alt="" /></a></li>
+           	  <li><a data-fancybox="gallery" href="gallery/p43.jpg"><img src="gallery/t43.jpg" alt="" /></a></li>
+           	  <li><a data-fancybox="gallery" href="gallery/p44.jpg"><img src="gallery/t44.jpg" alt="" /></a></li>
+            	<li><a data-fancybox="gallery" href="gallery/p47.jpg"><img src="gallery/t47.jpg" alt="" /></a></li>
+           	  <li><a data-fancybox="gallery" href="gallery/p48.jpg"><img src="gallery/t48.jpg" alt="" /></a></li>
+           	  <li><a data-fancybox="gallery" href="gallery/p49.jpg"><img src="gallery/t49.jpg" alt="" /></a></li>
+           	  <li><a data-fancybox="gallery" href="gallery/p50.jpg"><img src="gallery/t50.jpg" alt="" /></a></li>
+           	  <li><a data-fancybox="gallery" href="gallery/p51.jpg"><img src="gallery/t51.jpg" alt="" /></a></li>
+           	  <li><a data-fancybox="gallery" href="gallery/p53.jpg"><img src="gallery/t53.jpg" alt="" /></a></li>
+           	  <li><a data-fancybox="gallery" href="gallery/p55.jpg"><img src="gallery/t55.jpg" alt="" /></a></li>
+           	  <li><a data-fancybox="gallery" href="gallery/p56.jpg"><img src="gallery/t56.jpg" alt="" /></a></li>
+           	  <li><a data-fancybox="gallery" href="gallery/p57.jpg"><img src="gallery/t57.jpg" alt="" /></a></li>
           </ul>
           <div class="paging">
           	<a href="gallery02.html" class="prev">Prev</a><a href="gallery.html">1</a><a href="gallery02.html" >2</a><a class="current">3</a></div>
@@ -67,15 +60,17 @@
         <li><a class="facebook" href="https://www.facebook.com/satish.tabla?fref=ts" target="_blank">Facebook</a></li>
       </ul>
     	&copy; 2020 Sathish Babu
-    </div><script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-var pageTracker = _gat._getTracker("UA-8451177-1");
-pageTracker._trackPageview();
-} catch(err) {}</script>
+    </div>
 </div>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+<script type="text/javascript">
+    $('.btnmenu').click(function(){
+      $('#container').toggleClass('open');
+    });
+    $('.menuoverlay').click(function(){
+      $('#container').toggleClass('open');
+    });
+</script>
 </body>
 </html>

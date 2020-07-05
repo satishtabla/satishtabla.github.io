@@ -3,17 +3,20 @@
 <head>
 <title>Sathish Babu</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 <meta name="description" content="Tabla player from south India, a deciple of Ustad Allarakha Khan Saheb." />
 <meta name="keywords" content="tabla, tabla player, sathish babu, satish babu, tabla teacher, indian percussion, indian music, ustad allarakha, punjab kharana" />
 <meta name="author" content="Felix A J" />
 <meta name="copyright" content="2020 Sathish Babu" />
 <meta name="robots" content="All" />
 <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+<link href="jquery.fancybox.min.css" rel="stylesheet" type="text/css" />
 <link href="style.css" rel="stylesheet" type="text/css" />
-<link href="js/lightbox.css" rel="stylesheet" type="text/css" />
 </head>
 <body class="home">
 <div id="container">
+  <div class="menuoverlay"></div>
+  <a class="btnmenu"><span></span><span></span><span></span></a>
 	<ul id="nav">
     	<li class="current"><a href="#" title="Home">Home</a></li>
         <li><a href="profile.html" title="Profile">Profile</a></li>
@@ -25,7 +28,7 @@
   </ul>
     <div class="wrap">
         <div class="spotlight">
-        <h1><a href="#">Sathish Babu</a>
+        <h1><a href="index.html">Sathish Babu</a>
           <span>Disciple of Ustad Alla Rakha</span></h1>
         <img src="images/spotlight.jpg" alt="Satish Babu" title="Satish Babu" />
         <div class="overlay">
@@ -43,11 +46,11 @@
           <div class="col2">
             <div class="news">
                 <h2 title="In the News"><span>In the News</span></h2>
-                <a href="images/news-hin-7-5.jpg" class="popup"><img class="thumb" src="images/thumb-news.jpg" alt="Sathish Babu" title="Sathish Babu" /></a>
+                <a href="images/news-hin-7-5.jpg" data-fancybox><img class="thumb" src="images/thumb-news.jpg" alt="Sathish Babu" title="Sathish Babu" /></a>
                 <div>
-                  <p><a href="images/news-hin-7-5.jpg" class="popup">" It was after many travails that Sathish Babu was accepted by Ustad Alla Rakha as his shishya... "</a></p>
+                  <p><a href="images/news-hin-7-5.jpg" data-fancybox>" It was after many travails that Sathish Babu was accepted by Ustad Alla Rakha as his shishya... "</a></p>
                   <div class="links">
-                    <a href="images/news-hin-7-5.jpg" class="more popup">Read more &raquo; </a>
+                    <a href="images/news-hin-7-5.jpg" class="more" data-fancybox>Read more &raquo; </a>
                     <a href="news.html" class="more">More News &raquo; </a>
                   </div>
                 </div>
@@ -65,15 +68,7 @@
           </div>
         </div>
     </div>
-    <div id="footer"><!-- <script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-var pageTracker = _gat._getTracker("UA-8451177-1");
-pageTracker._trackPageview();
-} catch(err) {}</script> -->
+    <div id="footer">
 <ul class="social">
         <li><a href="https://api.whatsapp.com/send?phone=+919349320648" target="_blank" class="whatsapp">+91 9349320648</a></li>
         <li><a class="facebook" href="https://www.facebook.com/satish.tabla?fref=ts" target="_blank">Facebook</a></li>
@@ -82,11 +77,14 @@ pageTracker._trackPageview();
 		<div style="display:none;"><a href="http://www.a2zwebindex.com">Web Directory</a></div>
     </div>
 </div>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/lightbox.js"></script>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
 <script type="text/javascript">
-    $(function() {
-        $('.popup').lightBox();
+    $('.btnmenu').click(function(){
+      $('#container').toggleClass('open');
+    });
+    $('.menuoverlay').click(function(){
+      $('#container').toggleClass('open');
     });
 </script>
 </body>

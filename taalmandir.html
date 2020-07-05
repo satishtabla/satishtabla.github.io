@@ -3,6 +3,7 @@
 <head>
 <title>Sathish Babu - Concerts</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 <meta name="description" content="Tabla player from south India, a deciple of Ustad Alla Rekha Khan Saheb." />
 <meta name="keywords" content="tabla, tabla player, sathish babu, satish babu, tabla teacher, indian percussion, indian music, ustad allarakha, punjab kharana, concert, thiruvananthapuram" />
 <meta name="author" content="Felix A J" />
@@ -10,7 +11,6 @@
 <meta name="robots" content="All" />
 <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
 <link href="style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="js/swfobject.js"></script>
 <style>
 .fb_iframe_widget{
   display: block !important;
@@ -25,6 +25,8 @@
 </head>
 <body>
 <div id="container">
+  <div class="menuoverlay"></div>
+  <a class="btnmenu"><span></span><span></span><span></span></a>
 	<ul id="nav">
         <li><a href="index.html" title="Home">Home</a></li>
         <li><a href="profile.html" title="Profile">Profile</a></li>
@@ -38,7 +40,7 @@
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0" nonce="Eo2wMo0V"></script>
     <div class="wrap">
         <div class="spotlight">
-        <h1><a href="#">Sathish Babu</a></h1>
+        <h1><a href="index.html">Sathish Babu</a></h1>
         <img src="images/spotlight-inner.jpg" alt="Sathish Babu" title="Sathish Babu" />
         </div>
         <div class="content">
@@ -51,15 +53,16 @@
         <li><a class="facebook" href="https://www.facebook.com/satish.tabla?fref=ts" target="_blank">Facebook</a></li>
       </ul>
     	&copy; 2020 Sathish Babu
-    </div><script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-var pageTracker = _gat._getTracker("UA-8451177-1");
-pageTracker._trackPageview();
-} catch(err) {}</script>
+    </div>
 </div>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+    $('.btnmenu').click(function(){
+      $('#container').toggleClass('open');
+    });
+    $('.menuoverlay').click(function(){
+      $('#container').toggleClass('open');
+    });
+</script>
 </body>
 </html>

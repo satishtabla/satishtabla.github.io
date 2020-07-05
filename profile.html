@@ -3,6 +3,7 @@
 <head>
 <title>Sathish Babu - Profile</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 <meta name="description" content="tabla player from south India, a deciple of Ustad Alla Rekha Khan Saheb." />
 <meta name="keywords" content="tabla, tabla player, sathish babu, satish babu, tabla teacher, indian percussion, indian music, ustad alla rekha, punjab kharana" />
 <meta name="author" content="Felix A J" />
@@ -13,6 +14,8 @@
 </head>
 <body>
 <div id="container">
+  <div class="menuoverlay"></div>
+  <a class="btnmenu"><span></span><span></span><span></span></a>
 	<ul id="nav">
         <li><a href="index.html" title="Home">Home</a></li>
         <li class="current"><a href="profile.html" title="Profile">Profile</a></li>
@@ -24,7 +27,7 @@
   </ul>
     <div class="wrap">
         <div class="spotlight">
-        <h1><a href="#">Sathish Babu</a></h1>
+        <h1><a href="index.html">Sathish Babu</a></h1>
         <img src="images/spotlight-inner.jpg" alt="Sathish Babu" title="Sathish Babu" />
         </div>
         <div class="content">
@@ -66,5 +69,14 @@ Smt. Sunitha Rao</strong></p>
     	&copy; 2020 Sathish Babu
     </div>
 </div>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+    $('.btnmenu').click(function(){
+      $('#container').toggleClass('open');
+    });
+    $('.menuoverlay').click(function(){
+      $('#container').toggleClass('open');
+    });
+</script>
 </body>
 </html>

@@ -3,17 +3,20 @@
 <head>
 <title>Sathish Babu - Videos</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 <meta name="description" content="Excerpts from perfomances" />
 <meta name="keywords" content="Tabla, tabla player, sathish babu, satish babu, tabla teacher, indian percussion, indian music, ustad allarakha, punjab kharana, download mp3, videos" />
 <meta name="author" content="Felix A J" />
 <meta name="copyright" content="2020 Sathish Babu" />
 <meta name="robots" content="All" />
 <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+<link href="jquery.fancybox.min.css" rel="stylesheet" type="text/css" />
 <link href="style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="js/swfobject.js"></script>
 </head>
 <body>
 <div id="container">
+  <div class="menuoverlay"></div>
+  <a class="btnmenu"><span></span><span></span><span></span></a>
 	<ul id="nav">
         <li><a href="index.html" title="Home">Home</a></li>
         <li><a href="profile.html" title="Profile">Profile</a></li>
@@ -25,16 +28,34 @@
   </ul>
     <div class="wrap">
         <div class="spotlight">
-        <h1><a href="#">Sathish Babu</a></h1>
+        <h1><a href="index.html">Sathish Babu</a></h1>
         <img src="images/spotlight-inner.jpg" alt="Sathish Babu" title="Sathish Babu" />
         </div>
         <div class="content">
           <h2>Videos</h2>
-
-          <p style="padding-top: 30px;clear:both;">
-          <div style="float:right"><object width="250" height="200"><param name="movie" value="http://www.youtube.com/v/T09J7XyF8nc&hl=en&fs=1&color1=0x5d1719&color2=0xcd311b"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/T09J7XyF8nc&hl=en&fs=1&color1=0x5d1719&color2=0xcd311b" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="250" height="200"></embed></object></div>
-          <div style="float:left"><object width="250" height="200"><param name="movie" value="http://www.youtube.com/v/ngj342_CYmA&hl=en&fs=1&color1=0x5d1719&color2=0xcd311b"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/ngj342_CYmA&hl=en&fs=1&color1=0x5d1719&color2=0xcd311b" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="250" height="200"></embed></object></div>
-	  </p><br />&nbsp;
+          <ul class="video-list">
+            <li>
+              <a href="https://www.youtube.com/watch?v=XpxdrSpL67M" data-fancybox><img src="images/video1.jpg" alt="" /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=N5JKCp7GzjY" data-fancybox><img src="images/video2.jpg" alt="" /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=j6O87alAwkY" data-fancybox><img src="images/video3.jpg" alt="" /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=mCqFfOQ-P-I" data-fancybox><img src="images/video4.jpg" alt="" /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=aE8GPevpOu0" data-fancybox><img src="images/video5.jpg" alt="" /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=ngj342_CYmA" data-fancybox><img src="images/video7.jpg" alt="" /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=T09J7XyF8nc" data-fancybox><img src="images/video6.jpg" alt="" /></a>
+            </li>
+          </ul>
         </div>
     </div>
     <div id="footer">
@@ -43,15 +64,18 @@
         <li><a class="facebook" href="https://www.facebook.com/satish.tabla?fref=ts" target="_blank">Facebook</a></li>
       </ul>
     	&copy; 2020 Sathish Babu
-    </div><script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-var pageTracker = _gat._getTracker("UA-8451177-1");
-pageTracker._trackPageview();
-} catch(err) {}</script>
+    </div>
 </div>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+<script>
+    $('.btnmenu').click(function(){
+      $('#container').toggleClass('open');
+    });
+    $('.menuoverlay').click(function(){
+      $('#container').toggleClass('open');
+    });
+</script>
 </body>
 </html>

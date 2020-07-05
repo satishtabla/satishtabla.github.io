@@ -3,17 +3,20 @@
 <head>
 <title>Sathish Babu - News</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 <meta name="description" content="Tabla player from south India, a deciple of Ustad Alla Rekha Khan Saheb." />
 <meta name="keywords" content="tabla, tabla player, sathish babu, satish babu, tabla teacher, indian percussion, indian music, ustad allarakha, punjab kharana, thiruvananthapuram" />
 <meta name="author" content="Felix A J" />
 <meta name="copyright" content="2020 Sathish Babu" />
 <meta name="robots" content="All" />
 <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+<link href="jquery.fancybox.min.css" rel="stylesheet" type="text/css" />
 <link href="style.css" rel="stylesheet" type="text/css" />
-<link href="js/lightbox.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="container">
+  <div class="menuoverlay"></div>
+  <a class="btnmenu"><span></span><span></span><span></span></a>
 	<ul id="nav">
         <li><a href="index.html" title="Home">Home</a></li>
         <li><a href="profile.html" title="Profile">Profile</a></li>
@@ -25,35 +28,35 @@
   </ul>
     <div class="wrap">
         <div class="spotlight">
-        <h1><a href="#">Sathish Babu</a></h1>
+        <h1><a href="index.html">Sathish Babu</a></h1>
         <img src="images/spotlight-inner.jpg" alt="Sathish Babu" title="Sathish Babu" />
         </div>
         <div class="content">
             <h2>In the News</h2>
             <ul class="news-list">
             	<li>
-            	<a class="img-thumb" href="images/news-hin-7-5.jpg" title="The Hindu - May 7, 2009"><img src="images/news-hin-7-5-t.jpg" alt="" title="" /></a>
+            	<a data-fancybox="news" class="img-thumb" href="images/news-hin-7-5.jpg" title="The Hindu - May 7, 2009"><img src="images/news-hin-7-5-t.jpg" alt="" title="" /></a>
                 <h4>The Hindu</h4>
                 <h4>May 7, 2009</h4>
                 </li>
                 <li>
-            	<a href="images/news-man-3-5.jpg" title="Malayalamanorama - May 3, 2009"><img src="images/news-man-3-5-t.jpg" alt="" title="" /></a>
+            	<a data-fancybox="news" href="images/news-man-3-5.jpg" title="Malayalamanorama - May 3, 2009"><img src="images/news-man-3-5-t.jpg" alt="" title="" /></a>
                 <h4>Malayalamanorama</h4><h4>May 3, 2009</h4>
                 </li>
                 <li>
-            	<a href="images/news-mat-3-5.jpg" title="Mathrubhumi - May 3, 2009"><img src="images/news-mat-3-5-t.jpg" alt="" title="" /></a>
+            	<a data-fancybox="news" href="images/news-mat-3-5.jpg" title="Mathrubhumi - May 3, 2009"><img src="images/news-mat-3-5-t.jpg" alt="" title="" /></a>
                 <h4>Mathrubhumi</h4><h4>May 3, 2009</h4>
                 </li>
                 <li>
-            	<a href="images/news-dee-14-3.jpg" title="Deepika - March 14, 2009"><img src="images/news-dee-14-3-t.jpg" alt="" title="" /></a>
+            	<a data-fancybox="news" href="images/news-dee-14-3.jpg" title="Deepika - March 14, 2009"><img src="images/news-dee-14-3-t.jpg" alt="" title="" /></a>
                 <h4>Deepika</h4><h4>March 14, 2009</h4>
                 </li>
                 <li>
-            	<a href="images/news-des-14-3.jpg" title="Deshabhimani - March 14, 2009"><img src="images/news-des-14-3-t.jpg" alt="" title="" /></a>
+            	<a data-fancybox="news" href="images/news-des-14-3.jpg" title="Deshabhimani - March 14, 2009"><img src="images/news-des-14-3-t.jpg" alt="" title="" /></a>
                 <h4>Deshabhimani</h4><h4>March 14, 2009</h4>
                 </li>
                 <li>
-            	<a href="images/news-mat-14-3.jpg" title="Mathrubhumi - March 14, 2009"><img src="images/news-mat-14-3-t.jpg" alt="" title="" /></a>
+            	<a data-fancybox="news" href="images/news-mat-14-3.jpg" title="Mathrubhumi - March 14, 2009"><img src="images/news-mat-14-3-t.jpg" alt="" title="" /></a>
                 <h4>Mathrubhumi</h4><h4>March 14, 2009</h4>
                 </li>
             </ul>
@@ -68,13 +71,14 @@
     </div>
 </div>
 
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/lightbox.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
 <script type="text/javascript">
-    $(function() {
-        $('.news-list a').lightBox();
-        $('.news-list li:nth-child(3n+1)').css('clear','both');
+    $('.btnmenu').click(function(){
+      $('#container').toggleClass('open');
+    });
+    $('.menuoverlay').click(function(){
+      $('#container').toggleClass('open');
     });
 </script>
 </body>
