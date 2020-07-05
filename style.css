@@ -33,7 +33,7 @@ background:url(images/bg-tile.jpg);
 body{
 color:#D1C496;
 font-family: 'josefin', sans-serif;
-font-size: 17px;
+font-size: 18px;
 margin:0;
 background:#110604 url(images/bg-body.jpg) no-repeat center 0;
 }
@@ -64,7 +64,7 @@ hr{
 .clear{clear:both;}
 h1, h2,h3,h4{font-weight: normal;}
 h2{
-  color: #fff;
+  color: #dedede;
   font-family: 'classgarmnd_btbold_italic';
   font-size: 19px;
   line-height: 1;
@@ -234,7 +234,7 @@ color: #f2c54b;
 .taalmandir a.whatsapp{
   display: inline-block;
   font-size: 20px;
-  color: #fff;
+  color: #dedede;
 }
 .taalmandir a.whatsapp:before{
   background: url('images/whatsapp.png') no-repeat;
