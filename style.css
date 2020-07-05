@@ -12,12 +12,20 @@
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
+/*@font-face {
 font-family: 'josefin_semibold';
 src: url('fonts/josefin-semibold.woff2') format('woff2'),
      url('fonts/josefin-semibold.woff') format('woff');
 font-weight: normal;
 font-style: normal;
+}*/
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('CenturyGothic.woff2') format('woff2'),
+      url('CenturyGothic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Script MT';
@@ -32,7 +40,7 @@ background:url(images/bg-tile.jpg);
 }
 body{
 color:#D1C496;
-font-family: 'josefin', sans-serif;
+font-family: 'Century Gothic', sans-serif;
 font-size: 18px;
 margin:0;
 background:#110604 url(images/bg-body.jpg) no-repeat center 0;
@@ -175,7 +183,7 @@ left:30px;
 }
 .spotlight h1 span{
   display: block;
-  font-family: 'josefin';
+  font-family: 'Century Gothic';
   font-size: 26px;
 }
 .spotlight h1 a{
@@ -228,7 +236,7 @@ color: #f2c54b;
 }
 .taalmandir h3{
   font-size: 24px;
-  font-family: 'josefin';
+  font-family: 'Century Gothic';
   margin-bottom: 10px;
 }
 .taalmandir a.whatsapp{
@@ -651,8 +659,5 @@ display: -webkit-box;display: -ms-flexbox;display: flex;
   .award-list li{
     float: none;
     margin-right: 20px;
-  }
-  .profile{
-    font-size: 19px;
   }
 }
