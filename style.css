@@ -1,10 +1,10 @@
-@font-face {
+/*@font-face {
   font-family: 'josefin';
   src: url('fonts/josefinsans.woff2') format('woff2'),
  url('fonts/josefinsans.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-}
+}*/
 @font-face {
   font-family: 'classgarmnd_btbold_italic';
   src: url('fonts/classicalgaramondbolditalicbt.woff2') format('woff2'),
@@ -78,13 +78,13 @@ h2{
   line-height: 1;
 }
 h3{
-  font-family: 'josefin_semibold';
+  /*font-family: 'josefin_semibold';*/
 margin:0 0 5px;
 font-size:18px;
 }
 strong{
-  font-weight: normal;
-  font-family: 'josefin_semibold';
+  /*font-weight: normal;*/
+  /*font-family: 'josefin_semibold';*/
 }
 .content li h3{
 font-size:14px;
