@@ -574,7 +574,7 @@ display: -webkit-box;display: -ms-flexbox;display: flex;
   }
   .btnmenu{
     cursor: pointer;
-    background: #f7cb4f;
+    background: #a74c0b;
     border-radius: 4px;
     display: block;
     position: absolute;
@@ -586,7 +586,7 @@ display: -webkit-box;display: -ms-flexbox;display: flex;
     z-index: 7;
   }
   .btnmenu span{
-    background: #333;
+    background: #f1b991;
     display: block;
     margin-bottom: 6px;
       height: 2px;
