@@ -102,7 +102,7 @@ li{
 margin:0 0 20px;
 }
 #container{
-width:720px;
+width:820px;
 padding-top: 46px;
 margin:0 auto 50px;
 overflow:hidden;
@@ -112,6 +112,7 @@ box-shadow: 0 0 23px #000;
 font-family: 'classgarmnd_btbold_italic';
 height:55px;
 background:url(images/bg-menu.jpg) no-repeat center top;
+background-size: 100% 55px;
 margin:0;
 padding:0;
 overflow:hidden;
@@ -191,6 +192,7 @@ left:30px;
 }
 .homecontent{
 background:#551400 url(images/bg-content.jpg) no-repeat center top;
+background-size: 100%;
 display: -webkit-box;display: -ms-flexbox;display: flex;
 -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -353,6 +355,7 @@ margin:0 20px 0 0;
 }
 .content{
 background:#551400 url(images/bg-content.jpg) no-repeat center top;
+background-size: 100%;
 padding:40px 45px;
 min-height:500px;
 }
@@ -661,4 +664,13 @@ display: -webkit-box;display: -ms-flexbox;display: flex;
     float: none;
     margin-right: 20px;
   }
+}
+.btn-wrap{
+  padding: 40px 20px;
+  text-align: center;
+}
+.btn {
+  background: #8b311c;
+  display: inline-block;
+  padding: 10px 15px;
 }
