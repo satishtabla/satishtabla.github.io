@@ -160,6 +160,12 @@ background: linear-gradient(90deg, rgb(22, 5, 0) 52%, rgba(32,6,0,0) 100%);
   bottom: 10px;
   left: 10px;
 }
+
+.taalmandir_logo {
+  position: absolute;
+  right: -100px;
+  bottom: 0;
+}
 .overlay h2{
 margin: 0 0 6px;
 font-size: 32px;
@@ -627,10 +633,15 @@ display: -webkit-box;display: -ms-flexbox;display: flex;
   }
   .overlay{
     background: #160500;
-    position: static;
+    position: relative;
     width: 100%;
     clear: both;
   }
+  .taalmandir_logo {
+    right: 26px;
+    bottom: -19px;
+    max-width: 88px;
+}
   .spotlight img{
     float: right;
     max-width: initial;
