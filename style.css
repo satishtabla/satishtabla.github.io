@@ -674,9 +674,10 @@ display: -webkit-box;display: -ms-flexbox;display: flex;
   }
   .spotlight .vidyarambham{
     left: 16px;
-    width: 90px;
-    height: 90px;
+    width: 200px;
+    height: 50px;
     margin-top: -45px;
+    top: 20%;
   }
   .col1, .col2{
     width: 100%;
